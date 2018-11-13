@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+<script src="app.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+ <script src="https://js.stripe.com/v3/"></script>
+  <title></title>
+</head>
+<body>
+
+
+
+<form action="/charge" method="post" id="payment-form">
+  <script 
+  src = "https://checkout.stripe.com/checkout.js"
+  class = "stripe-button"
+  data-key = "_pk_test_ENTER_PUBLISHABLE_TEST_KEY_HERE"
+  data-amount = "30000"
+  data-name = "test product"
+  data-description = "this is a test for me not a real charge"
+  data-locale = "auto"
+  data-currency = "usd"
+  ></script>
+
+ 
+ <input type="hidden" value="30000" name="chargeAmount">
+
+  
+</form>
+</body>
+</html>
